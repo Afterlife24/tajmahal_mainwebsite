@@ -78,14 +78,14 @@ const Hero = () => {
         <AnimatedSection animation="fadeUp" delay={1100}>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-16">
   <button 
-    onClick={() => window.location.href = "https://example.com/reservations"}
+    onClick={() => window.location.href = "https://tajmahal-scanme.gofastapi.com/"}
     className="group px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 relative overflow-hidden"
   >
     <span className="relative z-10">Reserve Your Table</span>
     <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
   </button>
   <button 
-    onClick={() => window.location.href = "https://example.com/menu"}
+    onClick={() => window.location.href = "https://tajmahal-scanme.gofastapi.com/"}
     className="group px-8 sm:px-10 py-4 sm:py-5 border-2 border-white/80 text-white font-bold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 backdrop-blur-sm relative overflow-hidden"
   >
     <span className="relative z-10">Explore Menu</span>
