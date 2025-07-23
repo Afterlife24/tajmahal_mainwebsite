@@ -7,29 +7,29 @@ const About = () => {
   const features = [
     {
       icon: Crown,
-      title: "Royal Heritage",
-      description: "Recipes passed down through generations of royal chefs, bringing authentic Mughal flavors to your table."
+      title: "Héritage Royal",
+      description: "Recettes transmises à travers les générations de chefs royaux, apportant des saveurs mogholes authentiques à votre table."
     },
     {
       icon: Users,
-      title: "Family Tradition",
-      description: "Founded in 1990 by the Sharma family, we've been serving the community with love and dedication for over three decades."
+      title: "Tradition Familiale",
+      description: "Fondé en 1990 par la famille Sharma, nous servons la communauté avec amour et dévouement depuis plus de trois décennies."
     },
     {
       icon: Award,
-      title: "Award Winning",
-      description: "Recognized as the 'Best Indian Restaurant' for five consecutive years by the City Culinary Association."
+      title: "Primé",
+      description: "Reconnu comme le 'Meilleur Restaurant Indien' pendant cinq années consécutives par l'Association Culinaire de la Ville."
     },
     {
       icon: Heart,
-      title: "Made with Love",
-      description: "Every dish is prepared with the finest ingredients and traditional cooking methods, served with genuine hospitality."
+      title: "Préparé avec Amour",
+      description: "Chaque plat est préparé avec les meilleurs ingrédients et des méthodes de cuisson traditionnelles, servi avec une hospitalité authentique."
     }
   ];
 
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-amber-50 via-orange-50/50 to-red-50/30 relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Motif de fond */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-64 h-64 border border-amber-300 rounded-full"></div>
         <div className="absolute bottom-10 left-10 w-48 h-48 border border-amber-300 rounded-full"></div>
@@ -38,17 +38,17 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <AnimatedSection className="text-center mb-20">
           <span className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-full text-amber-700 text-sm font-semibold mb-6 border border-amber-200">
-            Our Legacy
+            Notre Héritage
           </span>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-            A Journey Through
+            Un Voyage à Travers
             <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent block">
-              Royal Indian Heritage
+              l'Héritage Royal Indien
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Step into a world where culinary artistry meets royal tradition. Our restaurant pays homage to the 
-            magnificent Taj Mahal, offering an authentic dining experience that transports you to the golden age of Indian cuisine.
+            Entrez dans un monde où l'art culinaire rencontre la tradition royale. Notre restaurant rend hommage au 
+            magnifique Taj Mahal, offrant une expérience culinaire authentique qui vous transporte à l'âge d'or de la cuisine indienne.
           </p>
         </AnimatedSection>
 
@@ -58,7 +58,7 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl"></div>
               <LazyImage 
                 src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Traditional Indian cooking"
+                alt="Cuisine indienne traditionnelle"
                 className="relative rounded-3xl shadow-2xl"
               />
             </div>
@@ -67,19 +67,19 @@ const About = () => {
           <AnimatedSection animation="slideRight" delay={200}>
             <div className="space-y-8">
               <h3 className="text-4xl font-bold text-gray-900">
-                From Heritage to Your Plate
+                De l'Héritage à Votre Assiette
               </h3>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Our master chefs have spent years perfecting the art of Indian cuisine, studying under renowned culinary masters 
-                and preserving authentic cooking techniques that have been cherished for centuries.
+                Nos chefs maîtres ont passé des années à perfectionner l'art de la cuisine indienne, étudiant auprès de maîtres culinaires renommés 
+                et préservant des techniques de cuisine authentiques chéries depuis des siècles.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Every spice is carefully selected, every recipe meticulously crafted, and every dish thoughtfully presented 
-                to honor the rich culinary heritage of India while creating memorable experiences for our guests.
+                Chaque épice est soigneusement sélectionnée, chaque recette méticuleusement élaborée, et chaque plat présenté avec soin 
+                pour honorer le riche héritage culinaire de l'Inde tout en créant des expériences mémorables pour nos invités.
               </p>
               <div className="pt-6">
                 <button className="group px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden">
-                  <span className="relative z-10">Discover Our Story</span>
+                  <span className="relative z-10">Découvrez Notre Histoire</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </div>

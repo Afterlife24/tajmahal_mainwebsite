@@ -14,10 +14,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
+    { name: 'Accueil', href: '#home' },
+    { name: 'À propos', href: '#about' },
     { name: 'Menu', href: '#menu' },
-    { name: 'Gallery', href: '#gallery' },
+    { name: 'Galerie', href: '#gallery' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -42,7 +42,7 @@ const Header = () => {
             </h1>
           </div>
 
-          {/* Enhanced Desktop Navigation */}
+          {/* Navigation desktop améliorée */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
@@ -58,7 +58,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Enhanced Contact Info */}
+          {/* Informations de contact améliorées */}
           <div className="hidden lg:flex items-center space-x-6">
             <div className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
               isScrolled ? 'bg-gray-100' : 'bg-white/10 backdrop-blur-sm'
@@ -70,7 +70,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Enhanced Mobile menu button */}
+          {/* Bouton menu mobile amélioré */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`md:hidden p-2 rounded-full transition-all duration-300 ${
@@ -81,7 +81,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Enhanced Mobile Navigation */}
+        {/* Navigation mobile améliorée */}
         {isMenuOpen && (
           <div className="md:hidden bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl mt-2 p-6 border border-gray-200">
             <nav className="flex flex-col space-y-4">

@@ -7,46 +7,46 @@ const Gallery = () => {
   const galleryItems = [
     {
       image: "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Traditional Cooking",
-      category: "Kitchen"
+      title: "Cuisine Traditionnelle",
+      category: "Cuisine"
     },
     {
       image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Elegant Dining",
+      title: "Salle Élégante",
       category: "Ambiance"
     },
     {
       image: "https://images.pexels.com/photos/1418322/pexels-photo-1418322.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Signature Dishes",
-      category: "Food"
+      title: "Spécialités Maison",
+      category: "Plats"
     },
     {
       image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Fresh Spices",
-      category: "Ingredients"
+      title: "Épices Fraîches",
+      category: "Ingrédients"
     },
     {
       image: "https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Royal Feast",
-      category: "Food"
+      title: "Festin Royal",
+      category: "Plats"
     },
     {
       image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Warm Hospitality",
+      title: "Hospitalité Chaleureuse",
       category: "Service"
     }
   ];
 
   const stats = [
-    { icon: Users, number: "50,000+", label: "Happy Customers" },
-    { icon: Utensils, number: "200+", label: "Dishes Served Daily" },
-    { icon: Building, number: "30+", label: "Years of Excellence" },
-    { icon: Camera, number: "5000+", label: "Beautiful Memories" }
+    { icon: Users, number: "50 000+", label: "Clients Satisfaits" },
+    { icon: Utensils, number: "200+", label: "Plats Servis Quotidiennement" },
+    { icon: Building, number: "30+", label: "Ans d'Excellence" },
+    { icon: Camera, number: "5000+", label: "Beaux Souvenirs" }
   ];
 
   return (
     <section id="gallery" className="py-24 bg-gradient-to-br from-gray-50 via-amber-50/30 to-orange-50/50 relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Motif de fond */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-32 h-32 border border-amber-300 rounded-full"></div>
         <div className="absolute bottom-20 right-20 w-48 h-48 border border-amber-300 rounded-full"></div>
@@ -55,20 +55,20 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <AnimatedSection className="text-center mb-20">
           <span className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-full text-amber-700 text-sm font-semibold mb-6 border border-amber-200">
-            Visual Journey
+            Voyage Visuel
           </span>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-            Moments of
+            Moments d'
             <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent block">
               Excellence
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Take a visual journey through our restaurant's atmosphere, cuisine, and the memorable experiences we create for our guests.
+            Parcourez en images l'ambiance de notre restaurant, notre cuisine et les expériences mémorables que nous créons pour nos clients.
           </p>
         </AnimatedSection>
 
-        {/* Enhanced Stats */}
+        {/* Statistiques améliorées */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
           {stats.map((stat, index) => (
             <AnimatedSection 
@@ -89,7 +89,7 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Enhanced Gallery Grid */}
+        {/* Grille de galerie améliorée */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {galleryItems.map((item, index) => (
             <AnimatedSection 
@@ -123,7 +123,7 @@ const Gallery = () => {
 
         <AnimatedSection className="text-center" delay={600}>
           <button className="group px-10 py-5 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-amber-500/25 relative overflow-hidden">
-            <span className="relative z-10">View Complete Gallery</span>
+            <span className="relative z-10">Voir la Galerie Complète</span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </AnimatedSection>

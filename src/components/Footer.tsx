@@ -12,42 +12,42 @@ const Footer = () => {
   ];
 
   const footerLinks = {
-    "Quick Links": [
-      { name: "Home", href: "#home" },
-      { name: "About Us", href: "#about" },
+    "Liens rapides": [
+      { name: "Accueil", href: "#home" },
+      { name: "À propos", href: "#about" },
       { name: "Menu", href: "#menu" },
-      { name: "Gallery", href: "#gallery" },
+      { name: "Galerie", href: "#gallery" },
       { name: "Contact", href: "#contact" }
     ],
     "Services": [
-      { name: "Dine In", href: "#" },
-      { name: "Takeaway", href: "#" },
-      { name: "Catering", href: "#" },
-      { name: "Private Events", href: "#" },
-      { name: "Gift Cards", href: "#" }
+      { name: "Sur place", href: "#" },
+      { name: "À emporter", href: "#" },
+      { name: "Traiteur", href: "#" },
+      { name: "Événements privés", href: "#" },
+      { name: "Cartes cadeaux", href: "#" }
     ],
-    "Information": [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Allergen Info", href: "#" },
-      { name: "Nutritional Info", href: "#" },
-      { name: "Careers", href: "#" }
+    "Informations": [
+      { name: "Politique de confidentialité", href: "#" },
+      { name: "Conditions d'utilisation", href: "#" },
+      { name: "Allergènes", href: "#" },
+      { name: "Valeurs nutritionnelles", href: "#" },
+      { name: "Carrières", href: "#" }
     ]
   };
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Motif de fond */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 right-10 w-64 h-64 border border-amber-400 rounded-full"></div>
         <div className="absolute bottom-10 left-10 w-48 h-48 border border-amber-400 rounded-full"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Main Footer Content */}
+        {/* Contenu principal du pied de page */}
         <div className="py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Enhanced Restaurant Info */}
+            {/* Informations sur le restaurant */}
             <AnimatedSection animation="fadeUp">
               <div className="lg:col-span-1">
                 <div className="flex items-center space-x-3 mb-8">
@@ -57,12 +57,12 @@ const Footer = () => {
                   <h3 className="text-3xl font-bold">Taj Mahal</h3>
                 </div>
                 <p className="text-gray-400 mb-8 leading-relaxed text-lg">
-                  Experience the royal taste of authentic Indian cuisine in an elegant atmosphere inspired by India's most magnificent monument.
+                  Découvrez le goût royal de la cuisine indienne authentique dans une atmosphère élégante inspirée du plus magnifique monument de l'Inde.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 group">
                     <MapPin className="w-5 h-5 text-amber-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-gray-400 group-hover:text-white transition-colors duration-300">123 Royal Avenue, New York</span>
+                    <span className="text-gray-400 group-hover:text-white transition-colors duration-300">123 Avenue Royale, New York</span>
                   </div>
                   <div className="flex items-center space-x-3 group">
                     <Phone className="w-5 h-5 text-amber-400 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
             </AnimatedSection>
 
-            {/* Enhanced Footer Links */}
+            {/* Liens du pied de page */}
             {Object.entries(footerLinks).map(([title, links], index) => (
               <AnimatedSection key={title} animation="fadeUp" delay={(index + 1) * 100}>
                 <div>
@@ -99,39 +99,17 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Enhanced Newsletter Section */}
-        {/* <AnimatedSection animation="fadeUp" delay={400}>
-          <div className="border-t border-gray-800 py-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h4 className="text-2xl font-bold mb-4 text-amber-300">Stay Updated</h4>
-                <p className="text-gray-400 text-lg">Subscribe to our newsletter for special offers and exclusive events.</p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-6 py-4 rounded-full bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 focus:bg-gray-700 transition-all duration-300"
-                />
-                <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold rounded-full hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection> */}
-
-        {/* Enhanced Bottom Footer */}
+        {/* Pied de page inférieur */}
         <AnimatedSection animation="fadeUp" delay={600}>
           <div className="border-t border-gray-800 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex items-center space-x-2 text-gray-400 text-lg">
-                <span>© {currentYear} Taj Mahal Restaurant. Made with</span>
+                <span>© {currentYear} Restaurant Taj Mahal. Fait avec</span>
                 <Heart className="w-5 h-5 text-red-500 fill-current animate-pulse" />
-                <span>in New York</span>
+                <span>à New York</span>
               </div>
               
-              {/* Enhanced Social Links */}
+              {/* Liens sociaux */}
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
