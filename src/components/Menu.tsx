@@ -135,7 +135,7 @@ const Menu = () => {
                   </p>
 
                   <button 
-  onClick={() => window.location.href = "https://tajmahal-scanme.gofastapi.com/"}
+  onClick={() => window.location.href = "https://www.tajmahal-scanme.afterlife.org.in"}
   className="w-full px-6 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-xl hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
 >
   Order Now
@@ -153,7 +153,7 @@ const Menu = () => {
               Discover over 50 authentic dishes from across India
             </p>
             <button
-              onClick={() => window.location.href = "https://tajmahal-scanme.gofastapi.com/"}
+              onClick={() => window.location.href = "https://www.tajmahal-scanme.afterlife.org.in"}
               className="px-8 py-4 bg-white text-amber-600 font-bold rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
               View Full Menu
             </button>
