@@ -15,11 +15,7 @@ const Gallery = () => {
       title: "Salle Élégante",
       category: "Ambiance"
     },
-    {
-      image: "https://images.pexels.com/photos/1418322/pexels-photo-1418322.jpeg?auto=compress&cs=tinysrgb&w=800",
-      title: "Spécialités Maison",
-      category: "Plats"
-    },
+    
     {
       image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800",
       title: "Épices Fraîches",
