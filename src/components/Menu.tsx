@@ -3,44 +3,51 @@ import { Flame, Leaf, Star, Crown } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import LazyImage from './LazyImage';
 
+// Import images from assets
+import PouletRoyalImg from '../assets/Biryani poulet.jpg';
+import BiryaniAgneauImg from '../assets/Butter chicken.jpg';
+import PaneerMakhaniImg from '../assets/GRAND THALI ENTRÉE.jpg';
+import GrilladeTandooriImg from '../assets/Macédoine de légumes.jpg';
+
 const Menu = () => {
   const signatureDishes = [
-    {
-      name: "Poulet Royal au Beurre",
-      description: "Poulet tendre dans une sauce riche à la tomate et à la crème avec des épices aromatiques, servi avec du riz basmati et du pain naan",
-      price: "24,99 €",
-      image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800",
-      isSpicy: false,
-      isPopular: true,
-      isSignature: true
-    },
-    {
-      name: "Biryani d'Agneau Maharaja",
-      description: "Riz basmati aromatique en couches avec agneau tendre, safran, oignons frits et épices traditionnelles",
-      price: "28,99 €",
-      image: "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800",
-      isSpicy: true,
-      isPopular: true,
-      isSignature: true
-    },
-    {
-      name: "Paneer Makhani Royale",
-      description: "Cubes de paneer dans une sauce veloutée à la tomate et noix de cajou avec des herbes fraîches et de la crème",
-      price: "19,99 €",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
-      isVegetarian: true,
-      isPopular: true,
-      isSignature: true
-    },
-    {
-      name: "Grillade Mixte Tandoori",
-      description: "Spécialités tandoori variées incluant poulet tikka, seekh kebab, côtelettes d'agneau et crevettes",
-      price: "32,99 €",
-      image: "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800",
-      isSpicy: true,
-      isSignature: true
-    }
-  ];
+  {
+    name: "Biryani poulet",
+    description: "Un mélange aromatique de riz basmati parfumé, avec morceaux de poulet marinés, safran, épices exotiques et oignons frits croustillants.",
+    price: "16,00 €",
+    image: PouletRoyalImg,
+    isSpicy: false,
+    isPopular: true,
+    isSignature: true
+  },
+  {
+    name: "Butter chicken",
+    description: "Poulet tendre mijoté dans une sauce onctueuse au beurre et aux tomates, relevé d'épices douces, servi avec riz basmati ou naan.",
+    price: "15,00 €",
+    image: BiryaniAgneauImg,
+    isSpicy: true,
+    isPopular: true,
+    isSignature: true
+  },
+  {
+    name: "GRAND THALI ENTRÉE",
+    description: "Assortiment généreux de plats végétariens, offrant paneer, dal, légumes épicés, raita, et naan pour une expérience complète.",
+    price: "14,50 €",
+    image: PaneerMakhaniImg,
+    isVegetarian: true,
+    isPopular: true,
+    isSignature: true
+  },
+  {
+    name: "Macédoine de légumes",
+    description: "Mélange coloré de légumes finement coupés, légèrement assaisonnés et sautés pour préserver leur fraîcheur et croquant.",
+    price: "12,00 €",
+    image: GrilladeTandooriImg,
+    isSpicy: true,
+    isSignature: true
+  }
+];
+
 
   return (
     <section id="menu" className="py-24 bg-gradient-to-br from-slate-50 via-amber-50/30 to-orange-50/50 relative overflow-hidden">
