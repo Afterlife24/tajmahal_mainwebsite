@@ -2,6 +2,8 @@ import React from 'react';
 import { Crown, Users, Award, Heart } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 import LazyImage from './LazyImage';
+import IndianCuisineImg from '../assets/chicken-makhani-biryani.jpeg';
+
 
 const About = () => {
   const features = [
@@ -57,7 +59,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl"></div>
               <LazyImage 
-                src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={IndianCuisineImg}
                 alt="Cuisine indienne traditionnelle"
                 className="relative rounded-3xl shadow-2xl"
               />

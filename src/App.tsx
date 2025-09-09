@@ -17,7 +17,7 @@ function App() {
       <Hero />
       <About />
       <Menu />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contact />
       <Footer />
 
