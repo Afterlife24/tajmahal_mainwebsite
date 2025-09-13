@@ -7,12 +7,12 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Adresse",
-      content: ["123 Avenue Royale", "Quartier Centre-Ville", "New York, NY 10001"]
+      content: ["3 Rue des , ", "Vieilles Douves", "44000 ,Nantes"]
     },
     {
       icon: Phone,
       title: "Téléphone",
-      content: ["(555) 123-4567", "(555) 123-4568"]
+      content: ["02 40 89 18 31"]
     },
     {
       icon: Clock,
@@ -22,7 +22,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: ["reservations@tajmahal.com", "info@tajmahal.com"]
+      content: ["saqibshahzad53@gmail.com"]
     }
   ];
 
