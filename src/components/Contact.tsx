@@ -17,7 +17,10 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Horaires",
-      content: ["Lun-Jeu: 11h30 - 22h00", "Ven-Sam: 11h30 - 23h00", "Dim: 12h00 - 21h00"]
+content: [
+  "Lun-Sam: 11h45 - 14h00, 18h45 - 22h45",
+  "Dim: 11h45 - 14h00, 18h30 - 22h45"
+]
     },
     {
       icon: Mail,
@@ -83,8 +86,8 @@ const Contact = () => {
                 <MapPin className="w-16 h-16 text-amber-400 mb-6" />
                 <h3 className="text-3xl font-bold text-amber-300 mb-4">Notre Adresse</h3>
                 <p className="text-xl text-amber-100 mb-8 max-w-lg">
-                  123 Avenue Royale, Quartier Centre-Ville<br />
-                  New York, NY 10001
+                  3 Rue des Vieilles Douves 44000 ,Nantes<br />
+                  France
                 </p>
                 
                 {/* Carte interactive */}
@@ -101,16 +104,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="mt-8 grid grid-cols-2 gap-4 w-full">
-                  <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                    <h4 className="font-semibold text-amber-300 mb-2">Transports en commun</h4>
-                    <p className="text-amber-100 text-sm">Métro: A, C, E à 42ème Rue</p>
-                    <p className="text-amber-100 text-sm">Bus: M42, M104</p>
-                  </div>
-                  <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                    <h4 className="font-semibold text-amber-300 mb-2">Parking</h4>
-                    <p className="text-amber-100 text-sm">Parking de rue disponible</p>
-                    <p className="text-amber-100 text-sm">Parking couvert sur la 44ème Rue</p>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -124,17 +118,14 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-amber-300 mb-4">Heures d'ouverture</h3>
               <ul className="space-y-3">
                 <li className="flex justify-between text-amber-100">
-                  <span>Lundi - Jeudi</span>
-                  <span>11h30 - 22h00</span>
-                </li>
-                <li className="flex justify-between text-amber-100">
-                  <span>Vendredi - Samedi</span>
-                  <span>11h30 - 23h00</span>
-                </li>
-                <li className="flex justify-between text-amber-100">
-                  <span>Dimanche</span>
-                  <span>12h00 - 21h00</span>
-                </li>
+  <span>Lundi - Samedi</span>
+  <span>11h45 - 14h00, 18h45 - 22h45</span>
+</li>
+<li className="flex justify-between text-amber-100">
+  <span>Dimanche</span>
+  <span>11h45 - 14h00, 18h30 - 22h45</span>
+</li>
+
               </ul>
             </div>
             
@@ -153,13 +144,7 @@ const Contact = () => {
               <p className="text-amber-100 mb-4">
                 Suivez-nous sur les réseaux sociaux pour des offres spéciales et événements.
               </p>
-              <div className="flex space-x-4">
-                {['Facebook', 'Instagram', 'Twitter'].map((social) => (
-                  <button key={social} className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all duration-300">
-                    {social}
-                  </button>
-                ))}
-              </div>
+              
             </div>
           </div>
         </AnimatedSection>
