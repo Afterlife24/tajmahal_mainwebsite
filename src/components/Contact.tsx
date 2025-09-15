@@ -92,16 +92,17 @@ content: [
                 
                 {/* Carte interactive */}
                 <div className="w-full h-96 bg-white/10 rounded-xl border border-white/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="w-10 h-10 text-amber-900" />
-                    </div>
-                    <p className="text-amber-100">Carte interactive apparaîtrait ici</p>
-                    <button className="mt-6 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium rounded-full hover:from-amber-600 hover:to-amber-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                      Ouvrir dans Google Maps
-                    </button>
-                  </div>
-                </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10840.411509647782!2d-1.578171212841801!3d47.21456929999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eea7eafbce29%3A0x509828ce5a70b266!2sRestaurant%20Taj%20Mahal%20indien%20Pakistanais%20Nantes%20place%20royale!5e0!3m2!1sen!2sin!4v1757935273540!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="rounded-xl"
+  ></iframe>
+</div>
+
                 
                 <div className="mt-8 grid grid-cols-2 gap-4 w-full">
                   
